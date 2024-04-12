@@ -1,0 +1,14 @@
+#Template de CI-CD pipeline
+name: Empty CI/CD Pipeline
+
+on:
+ push:
+    branches:
+      - main
+
+jobs:
+ do_nothing:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Do nothing
+        run: echo "This step does nothing."
